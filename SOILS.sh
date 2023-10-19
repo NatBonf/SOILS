@@ -42,7 +42,6 @@ function escolha() {
 	case "$@" in
 		1) menu_consulta ;;
 		2) menu_registro ;;
-		#"consulta 1") query "SELECT * from pontos_coleta LEFT JOIN containers ON pontos_coleta.container = containers.id";;
 		"consulta 1") query "SELECT id,endereco,responsavel,telefone FROM pontos_coleta";;
 		"consulta 2") query "SELECT * FROM containers";;
 		"consulta 3") query "SELECT * FROM containers WHERE status = 'DISPONIVEL'";;
